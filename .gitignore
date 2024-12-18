@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE/Editor
+.vscode/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
