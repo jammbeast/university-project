@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.trapezoid {
+    clip-path: polygon(51% 0%, 37.40% 100%, 100% 100%, 100% 0%);
+  }
+
+.carousel-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+.carousel-container * {
+  user-select: none; /* Отключение выделения текста */
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: 
+       url('../public/fonts/BebasNeue-Regular.ttf') format('opentype'), /* Изменено */
+       url('../public/fonts/BebasNeue-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: 
+       url('../public/fonts/BebasNeue-Bold.otf') format('opentype'), /* Изменено */
+       url('../public/fonts/BebasNeue-Bold.ttf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@keyframes loop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%); /* Adjust percentage as needed */
+  }
+}
+
+.animate-loop {
+  animation: loop 30s linear infinite; /* Adjust duration (20s) and timing function (linear) as needed */
+}
